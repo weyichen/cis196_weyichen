@@ -3,5 +3,9 @@
 http://frozen-taiga-5911.herokuapp.com/
 
 Issues encountered:
+
+Homework 1
 - Creating an index.html in /public did not work. I had to create a new view on the command line to serve as the index page.
 - Heroku deployment was troublesome because I forgot about disabling sqlite3 in production.
+
+Homework 2: no issues encountered

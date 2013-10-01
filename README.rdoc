@@ -9,3 +9,8 @@ Homework 1
 - Heroku deployment was troublesome because I forgot about disabling sqlite3 in production.
 
 Homework 2: no issues encountered
+
+Homework 4
+- I could not set up a heroku app successfully using rails 3.2.x, even after I confirmed that it worked on localhost. Therefore I had to change the items below to make it work:
+  - I could not add new entries to the Users table because in Rails 4, I have to mark the parameters as required, per: http://stackoverflow.com/questions/17335329/activemodelforbiddenattributeserror-when-creating-new-user
+  - I could not display entries in the user index because I had to define a show method in the controller, per: http://stackoverflow.com/questions/17992528/error-the-action-show-could-not-be-found-for-postscontroller

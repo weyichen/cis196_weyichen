@@ -1,0 +1,19 @@
+<h1>Tasklists#index</h1>
+<p>Find me in app/views/tasklists/index.html.erb</p>
+
+<a href='/tasklists/new'>Create new tasklist</a>
+
+<table>
+  <tr>
+    <td >title</td>
+    <td >user</td>
+  </tr>
+  <% @task_lists.each do |task_list| %>
+    <tr>
+      <td><%= task_list.title %></td>
+      <td><%= link_to "show", tasklist_path(task_list.id)%></td>
+    <td><%= link_to "edit", edit_tasklist_path(task_list.id) %> </td>
+    <td><%= link_to "destroy", task_list, confirm: "you sure you want to do this?", method: :delete %></td>
+    </tr>
+  <% end %>
+</table>

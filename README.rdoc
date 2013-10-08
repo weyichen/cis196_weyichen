@@ -16,3 +16,11 @@ Homework 4
   - I could not display entries in the user index because I had to define a show method in the controller, per: http://stackoverflow.com/questions/17992528/error-the-action-show-could-not-be-found-for-postscontroller
   
 - Besides the users table covered in lecture, I also created another table named purchases, with columns product:string, price:string, and date:string
+
+Homework 5
+- Rails 4 Changes:
+http://rubyjunction.us/no-more-attr-accessible-in-ruby-on-rails-4
+
+- I am currently encountering the following error when trying to add a new tasklist:
+  ActionController::ParameterMissing in TasklistsController#create
+  This has to do with the params.require().permit() methods which are required for Rails 4

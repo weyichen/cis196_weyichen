@@ -1,0 +1,18 @@
+<h1>Tasklists#new</h1>
+<p>Find me in app/views/tasklists/new.html.erb</p>
+
+<%= form_for(@task_list) do |f| %>
+  <div class="field">
+    <p>title</p>
+    <%= f.text_field :title%>
+  </div>
+  
+  <div class="field">
+    <p>user</p>
+    <%= f.collection_select :user_id, User.all, :id, :name%>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

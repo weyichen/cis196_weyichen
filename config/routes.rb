@@ -1,6 +1,7 @@
 MyfirstApp::Application.routes.draw do
   resources :purchases
   resources :users
+  resources :tasklists
   get "landing_pages/home"
   get "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.
